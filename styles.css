@@ -1,0 +1,163 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@700&family=Fira+Code&display=swap');
+
+:root {
+    --bs-body-bg: #1a1a1a;
+    --bs-body-color: #e0e0e0;
+    --bs-primary: #ffa500;
+    --bs-primary-rgb: 255, 165, 0;
+    --bs-link-color: #ffa500;
+    --bs-link-hover-color: #ff8c00;
+    --code-bg: #2c2c2c;
+    --code-border: #ffa500;
+}
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--bs-primary);
+}
+
+.navbar {
+    background-color: #2a2a2a !important;
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.card {
+    background-color: #2a2a2a;
+    border: 1px solid #3a3a3a;
+}
+
+.card-title {
+    color: var(--bs-primary);
+}
+
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #ff8c00;
+    border-color: #ff8c00;
+    color: #1a1a1a;
+}
+
+.badge {
+    background-color: var(--bs-primary) !important;
+    color: #1a1a1a !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+pre {
+    background-color: var(--code-bg);
+    border: 2px solid var(--code-border);
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+code {
+    color: #e0e0e0;
+    font-family: 'Fira Code', monospace;
+}
+
+#readme-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Enhanced styles for README code blocks */
+#readme-content pre {
+    background-color: #252525;
+    border: 2px solid var(--bs-primary);
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin: 1rem 0;
+    overflow-x: auto;
+}
+
+#readme-content pre code {
+    color: #f8f8f2;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Inline code style */
+#readme-content p code,
+#readme-content li code {
+    background-color: #2a2a2a;
+    color: var(--bs-primary);
+    padding: 0.1em 0.14em;
+    border-radius: 3px;
+    font-size: 0.9em;
+    border: 1px solid rgba(255, 165, 0, 0.3);
+}
+
+.stats-item {
+    text-align: center;
+    border-right: 1px solid #3a3a3a;
+    padding: 0.5rem 0;
+}
+
+.stats-item:last-child {
+    border-right: none;
+}
+
+.stats-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--bs-primary);
+}
+
+.stats-label {
+    font-size: 0.875rem;
+    color: #9a9a9a;
+    font-weight: 300;
+}
+
+.project-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--bs-primary);
+}
+
+.project-description {
+    font-size: 1.25rem;
+    color: #9a9a9a;
+    font-weight: 300;
+}
+
+/* Additional styles for better readability */
+.card-body {
+    font-weight: 300;
+}
+
+strong {
+    font-weight: 600;
+}
+
+a {
+    font-weight: 400;
+}
+
+/* Improved spacing */
+.card {
+    margin-bottom: 1.5rem;
+}
+
+.card-title {
+    margin-bottom: 1rem;
+}

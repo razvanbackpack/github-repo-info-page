@@ -1,0 +1,33 @@
+# Ignore configuration file containing sensitive information
+config.php
+
+# Ignore the data cache file
+data.json
+
+# Ignore PHP development files
+*.log
+*.cache
+
+# Ignore common OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Ignore Composer dependencies
+/vendor/
+
+# Ignore any local environment files
+.env
+*.env
+
+# Ignore PHP error logs
+php_errors.log
+
+# Ignore backup files
+*.bak
+*.swp
+*~
+
+# Ignore any compiled PHP files (if applicable)
+*.phar
