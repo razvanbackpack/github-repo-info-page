@@ -144,7 +144,7 @@ if(DEBUG) {
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">README</h5>
-                            <button id="toggle-readme" class="btn btn-primary btn-sm mb-3">Toggle Raw/Formatted</button>
+                            <!-- <button id="toggle-readme" class="btn btn-primary btn-sm mb-3">Toggle Raw/Formatted</button> -->
                             <div id="readme-content"><?= $data['readme'] ?? 'README not available.' ?></div>
                         </div>
                     </div>
