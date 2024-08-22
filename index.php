@@ -70,7 +70,7 @@ if(DEBUG) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MicroMesh - Lightweight PHP Router</title>
+    <title><?= PROJECT_NAME . ' - '. PROJECT_DESCRIPTION?></title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/a11y-dark.min.css" rel="stylesheet">
     <link href="assets/styles.css" rel="stylesheet">
@@ -78,7 +78,7 @@ if(DEBUG) {
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">MicroMesh</a>
+            <a class="navbar-brand" href="#"><?=PROJECT_NAME?></a>
             <span class="badge bg-primary" id="latest-version">Latest: <?= htmlspecialchars($data['latest_version'] ?? 'N/A') ?></span>
         </div>
     </nav>
@@ -100,8 +100,8 @@ if(DEBUG) {
         <?php if (!empty($data) && !isset($data['error'])): ?>
             <div class="row mb-4">
                 <div class="col-md-12">
-                    <h1 class="project-title"><?= htmlspecialchars($data['name'] ?? 'MicroMesh') ?></h1>
-                    <p class="project-description"><?= htmlspecialchars($data['description'] ?? 'Lightweight PHP Router') ?></p>
+                    <h1 class="project-title"><?= htmlspecialchars($data['name'] ?? PROJECT_NAME) ?></h1>
+                    <p class="project-description"><?= htmlspecialchars($data['description'] ?? PROJECT_DESCRIPTION) ?></p>
                 </div>
             </div>
 
@@ -137,7 +137,7 @@ if(DEBUG) {
                     <div class="card mb-4">
                         <div class="card-body">
                             <h5 class="card-title">Installation</h5>
-                            <pre><code>composer require razvanbackpack/micromesh</code></pre>
+                            <pre><code style="padding: 0 !important">composer require <?=OWNER?>/<?=REPO?></code></pre>
                         </div>
                     </div>
 

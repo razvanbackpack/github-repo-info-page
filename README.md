@@ -4,7 +4,8 @@
 
 In the `func` folder, rename `config.example.php` into `config.php` and have fun.
 
-The PHP script will cache the JSON data from your github repository for 12 hours. If you want to force a refresh, delete `data.json`
+The PHP script will cache the JSON data from your github repository for 12 hours. If you want to force a refresh, delete `data.json`.
+
 
 Demo: [https://micromesh.razvancode.net/](https://micromesh.razvancode.net/)
 
