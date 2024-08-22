@@ -3,8 +3,8 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-require_once 'GitHubDataFetch.php';
-require_once 'config.php';
+require_once 'func/GitHubDataFetch.php';
+require_once 'func/config.php';
 
 function debugLog($message) {
     if(DEBUG) echo $message . "<br>";
@@ -12,7 +12,7 @@ function debugLog($message) {
 
 debugLog("Script started");
 
-$cacheFile = 'data.json';
+$cacheFile = 'assets/data.json';
 $logFile = 'github_fetch.log';
 
 // Check if we can create files
@@ -73,7 +73,7 @@ if(DEBUG) {
     <title>MicroMesh - Lightweight PHP Router</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/a11y-dark.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link href="assets/styles.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -213,6 +213,6 @@ if(DEBUG) {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked@4.0.0/marked.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-    <script src="script.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 </html>
